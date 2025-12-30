@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mene Gbenga Micheal | Full Stack & Web3 Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Fixed header -->
+    <header class="sticky top-0 z-50 bg-black/60 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-white text-2xl font-extrabold">MGM</a>
+            <!-- Mobile-only trio placed immediately after logo (visible only below md) -->
+            <div class="md:hidden flex items-center gap-3">
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer"
+                    aria-label="Mene on LinkedIn" class="social-link text-gray-300 hover:text-white">LinkedIn</a>
+                <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer"
+                    aria-label="Mene on GitHub" class="social-link text-gray-300 hover:text-white">
+                    <svg class="social-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"
+                        aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <title>GitHub</title>
+                        <path
+                            d="M12 .5C5.73.5.98 5.25.98 11.5c0 4.65 3.01 8.6 7.19 9.99.53.1.72-.23.72-.51 0-.25-.01-.92-.01-1.8-2.92.64-3.54-1.4-3.54-1.4-.48-1.22-1.17-1.55-1.17-1.55-.96-.66.07-.65.07-.65 1.06.08 1.62 1.09 1.62 1.09.94 1.6 2.46 1.14 3.06.87.09-.68.37-1.14.67-1.4-2.33-.27-4.78-1.17-4.78-5.21 0-1.15.41-2.09 1.08-2.83-.11-.27-.47-1.36.1-2.83 0 0 .88-.28 2.9 1.08A10.08 10.08 0 0112 6.8c.89.004 1.79.12 2.62.35 2.02-1.36 2.9-1.08 2.9-1.08.57 1.47.21 2.56.10 2.83.67.74 1.08 1.68 1.08 2.83 0 4.05-2.46 4.93-4.8 5.19.38.33.72.98.72 1.98 0 1.43-.01 2.59-.01 2.94 0 .28.19.61.73.51 4.17-1.38 7.18-5.33 7.18-9.98C23.02 5.25 18.27.5 12 .5z" />
+                    </svg>
+                    <span class="-ml-1">GitHub</span>
+                </a>
+                <a href="resume.pdf" class="text-gray-300 hover:text-white">CV</a>
+            </div>
+            <!-- Desktop nav (hidden on small screens) -->
+            <nav class="hidden md:flex gap-6 items-center">
+                <a href="#interactive" class="text-gray-300 hover:text-white">Home</a>
+                <a href="resume.pdf" class="text-gray-300 hover:text-white">CV</a>
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer"
+                    aria-label="Mene on LinkedIn" class="social-link text-gray-300 hover:text-white">LinkedIn</a>
+                <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer"
+                    aria-label="Mene on GitHub" class="social-link text-gray-300 hover:text-white">
+                    <svg class="social-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"
+                        aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        <title>GitHub</title>
+                        <path
+                            d="M12 .5C5.73.5.98 5.25.98 11.5c0 4.65 3.01 8.6 7.19 9.99.53.1.72-.23.72-.51 0-.25-.01-.92-.01-1.8-2.92.64-3.54-1.4-3.54-1.4-.48-1.22-1.17-1.55-1.17-1.55-.96-.66.07-.65.07-.65 1.06.08 1.62 1.09 1.62 1.09.94 1.6 2.46 1.14 3.06.87.09-.68.37-1.14.67-1.4-2.33-.27-4.78-1.17-4.78-5.21 0-1.15.41-2.09 1.08-2.83-.11-.27-.47-1.36.1-2.83 0 0 .88-.28 2.9 1.08A10.08 10.08 0 0112 6.8c.89.004 1.79.12 2.62.35 2.02-1.36 2.9-1.08 2.9-1.08.57 1.47.21 2.56.10 2.83.67.74 1.08 1.68 1.08 2.83 0 4.05-2.46 4.93-4.8 5.19.38.33.72.98.72 1.98 0 1.43-.01 2.59-.01 2.94 0 .28.19.61.73.51 4.17-1.38 7.18-5.33 7.18-9.98C23.02 5.25 18.27.5 12 .5z" />
+                    </svg>
+                    <span class="-ml-1">GitHub</span>
+                </a>
+                <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+                <div class="ml-2 inline-flex rounded-md shadow-sm" role="tablist" aria-label="Theme">
+                    <button id="theme-light" role="tab" aria-selected="false"
+                        class="px-3 py-1 rounded-l text-sm bg-transparent text-gray-300">Light</button>
+                    <button id="theme-dark" role="tab" aria-selected="false"
+                        class="px-3 py-1 rounded-r text-sm bg-indigo-600 text-white">Dark</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-10">
+        <!-- Two-column section: left wide, right narrow -->
+        <section id="interactive" class="grid grid-cols-1 md:grid-cols-[1fr_240px] gap-6">
+            <div id="left" class="bg-white/3 rounded-xl p-6 min-h-[420px]">
+                <!-- Hero visible with persistent avatar -->
+                <div id="hero-block"
+                    class="mb-6 bg-white/6 rounded-lg p-6 flex flex-col md:flex-row items-center gap-6">
+                    <div class="flex-1">
+                        <p class="text-indigo-300 font-semibold">Hello, I'm Mene Gbenga Micheal</p>
+                        <h1 class="text-3xl md:text-4xl font-extrabold mt-2 text-white">I am a <span id="typing-inline"
+                                class="text-indigo-300">Full Stack Developer</span></h1>
+                        <p class="text-gray-300 mt-3">Design-minded engineer building full-stack and Web3 products.</p>
+                    </div>
+                    <div
+                        class="w-28 h-28 md:w-36 md:h-36 flex-shrink-0 rounded-full overflow-hidden bg-white/6 ring-2 ring-white/10">
+                        <img src="img/mene.png" alt="Portrait" class="w-full h-full object-cover"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%230b0b0b%22/><text x=%2250%25%22 y=%2255%25%22 font-size=%2228%22 fill=%22%23ffffff%22 text-anchor=%22middle%22 font-family=%22Inter,Arial%22>MGM</text></svg>'">
+                    </div>
+                </div>
+
+                <!-- Timeline ribbon: interactive nodes map to panels -->
+                <div class="ribbon-wrap" aria-hidden="true">
+                    <svg id="timeline-ribbon" class="ribbon-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path class="ribbon-path" d="M40,70 C200,20 400,120 600,70 C800,20 1000,120 1160,70" />
+                        <path class="ribbon-flow animate" d="M40,70 C200,20 400,120 600,70 C800,20 1000,120 1160,70" />
+                        <!-- nodes mapped to panels 1..7 -->
+                        <g class="ribbon-bounce" style="animation-delay:0s">
+                            <circle class="ribbon-node" data-target="panel-Introduction" cx="80" cy="66" r="6"></circle>
+                        </g>
+                        <g class="ribbon-bounce" style="animation-delay:0.15s">
+                            <circle class="ribbon-node" data-target="panel-Projects" cx="220" cy="42" r="6"></circle>
+                        </g>
+                        <g class="ribbon-bounce" style="animation-delay:0.3s">
+                            <circle class="ribbon-node" data-target="panel-MyWork" cx="360" cy="88" r="6"></circle>
+                        </g>
+                        <g class="ribbon-bounce" style="animation-delay:0.45s">
+                            <circle class="ribbon-node" data-target="panel-Certifications" cx="520" cy="66" r="6">
+                            </circle>
+                        </g>
+                        <g class="ribbon-bounce" style="animation-delay:0.6s">
+                            <circle class="ribbon-node" data-target="panel-Skills" cx="700" cy="42" r="6"></circle>
+                        </g>
+                        <g class="ribbon-bounce" style="animation-delay:0.75s">
+                            <circle class="ribbon-node" data-target="panel-Experience" cx="860" cy="88" r="6"></circle>
+                        </g>
+                        <g class="ribbon-bounce" style="animation-delay:0.9s">
+                            <circle class="ribbon-node" data-target="panel-Contact" cx="1020" cy="66" r="6"></circle>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- Panels hidden until selected (expanded content) -->
+                <div id="panels" class="space-y-6">
+                    <article id="panel-Introduction" class="panel rounded-lg bg-white/5 text-left" role="region"
+                        aria-labelledby="panel-Introduction-title">
+                        <h3 id="panel-Introduction-title" class="text-2xl font-bold">Introduction</h3>
+                        <button class="panel-close" aria-label="Close Introduction">×</button>
+                        <p class="mt-3 text-gray-200">Hi — I'm Mene Gbenga Micheal. I design and build full-stack web
+                            applications and Web3 integrations with a focus on practical product outcomes. I work
+                            across front-end, backend and developer tooling, and enjoy building experiences that
+                            blend clarity of UI with robust server-side architecture.</p>
+                        <p class="mt-3 text-gray-200">Core interests: product-led engineering, scalable APIs, and
+                            lightweight, motion-led interfaces in a restrained black-and-white aesthetic.</p>
+                    </article>
+
+                    <article id="panel-Projects" class="panel rounded-lg bg-white/5 text-left" role="region"
+                        aria-labelledby="panel-Projects-title">
+                        <h3 id="panel-Projects-title" class="text-2xl font-bold">Selected Projects</h3>
+                        <button class="panel-close" aria-label="Close Selected Projects">×</button>
+                        <p class="mt-3 text-gray-200">Below are a few highlighted projects. Click an item in the index
+                            to reveal its details.</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-white/6 p-4 rounded flex flex-col">
+                                <img src="img/rgistplus.png" alt="Applicant Portal"
+                                    class="w-full h-36 object-cover rounded">
+                                <h4 class="mt-3 font-semibold text-white">Applicant Management Portal</h4>
+                                <p class="text-gray-300 text-sm mt-2">A custom portal to manage applicant intake,
+                                    review,
+                                    and automated notifications — built with a full-stack JS stack and secure
+                                    authentication.</p>
+                                <div class="mt-3">
+                                    <a href="https://www.rgistplusedu.com.ng/" target="_blank"
+                                        class="text-indigo-300">View live</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-white/6 p-4 rounded flex flex-col">
+                                <img src="img/sort4waste.png" alt="Learning Portal"
+                                    class="w-full h-36 object-cover rounded">
+                                <h4 class="mt-3 font-semibold text-white">Digital Learning Portal</h4>
+                                <p class="text-gray-300 text-sm mt-2">An e-learning platform with course content,
+                                    tracking, and assessments designed for vocational skill development.</p>
+                                <div class="mt-3"><a href="https://wareex.menegbengamicheal.com/" target="_blank"
+                                        class="text-indigo-300">View live</a></div>
+                            </div>
+
+                            <div class="bg-white/6 p-4 rounded flex flex-col">
+                                <img src="img/smartbet.png" alt="Smartbet AI" class="w-full h-36 object-cover rounded">
+                                <h4 class="mt-3 font-semibold text-white">Smartbet AI (Sketch)</h4>
+                                <p class="text-gray-300 text-sm mt-2">Design exploration and prototype for a sports
+                                    betting product enhanced with ML-driven insights and analytics.</p>
+                                <div class="mt-3"><a href="https://dsmartbetai.com/" target="_blank"
+                                        class="text-indigo-300">Visit</a></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="panel-MyWork" class="panel rounded-lg bg-white/5 text-left" role="region"
+                        aria-labelledby="panel-MyWork-title">
+                        <h3 id="panel-MyWork-title" class="text-2xl font-bold">My Work</h3>
+                        <button class="panel-close" aria-label="Close My Work">×</button>
+
+                        <div class="mt-4 space-y-4">
+                            <div class="p-4 bg-white/6 rounded">
+                                <h4 class="font-semibold text-white">Rgistplusedu Consult — Applicant Portal</h4>
+                                <p class="text-gray-300 text-sm mt-2">Led end-to-end development, deployment, and
+                                    operational support for an applicant management system used across several cohorts.
+                                </p>
+                                <a href="https://www.rgistplusedu.com.ng/" target="_blank"
+                                    class="text-indigo-300 mt-2 inline-block">Case study</a>
+                            </div>
+
+                            <div class="p-4 bg-white/6 rounded">
+                                <h4 class="font-semibold text-white">Sort4Waste Global — Learning Platform</h4>
+                                <p class="text-gray-300 text-sm mt-2">Built the learning and content delivery platform,
+                                    integrating payment and progress tracking components for learners.</p>
+                                <a href="https://wareex.menegbengamicheal.com/" target="_blank"
+                                    class="text-indigo-300 mt-2 inline-block">Live demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="panel-Certifications" class="panel rounded-lg bg-white/5 text-left" role="region"
+                        aria-labelledby="panel-Certifications-title">
+                        <h3 id="panel-Certifications-title" class="text-2xl font-bold">Certifications & Honors</h3>
+                        <button class="panel-close" aria-label="Close Certifications">×</button>
+                        <ul class="mt-3 space-y-3 text-gray-200">
+                            <li>
+                                <strong>Technical Support Fundamentals</strong> — Google.
+                                <a href="https://www.coursera.org/verify/48QCHSV4CMJL"
+                                    class="text-indigo-300">www.coursera.org/verify/48QCHSV4CMJL</a>
+                            </li>
+                            <li>
+                                <strong>Cloud Computing Certificate</strong> — IBM.
+                                <a href="https://www.coursera.org/verify/TVMH9G5VXNQ4"
+                                    class="text-indigo-300">www.coursera.org/verify/TVMH9G5VXNQ4</a>
+                            </li>
+                            <li>
+                                <strong>Foundation of Cybersecurity</strong> — Google.
+                                <a href="https://www.coursera.org/verify/H7CEBEPWCFA7"
+                                    class="text-indigo-300">www.coursera.org/verify/H7CEBEPWCFA7</a>
+                            </li>
+                            <li>
+                                <strong>Web development (HTML, CSS & JavaScript)</strong> — IBM.
+                                <a href="https://www.coursera.org/verify/JAFUAS7CY78X"
+                                    class="text-indigo-300">www.coursera.org/verify/JAFUAS7CY78X</a>
+                            </li>
+                            <li>
+                                <strong>Full Stack Development</strong> — Certificate of Achievement, 24 Weeks Course
+                                (Aug 2022).
+                                <a href="https://drive.google.com/file/d/1pF3aIWD5LcWmTfR96cVk0AFcKOe2Zv0Z/view?usp=drivesdk"
+                                    class="text-indigo-300">View</a>
+                            </li>
+                            <li>
+                                <strong>Blockchain & Web3 Development</strong> — Certificate of Achievement, 12 Weeks
+                                Course (Aug 2023).
+                                <a href="https://drive.google.com/file/d/1S0Uapv9cuJa3ncVQPs6hH5YwoB6QbW3D/view?usp=drivesdk"
+                                    class="text-indigo-300">View</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article id="panel-Skills" class="panel rounded-lg bg-white/5 text-left" role="region"
+                        aria-labelledby="panel-Skills-title">
+                        <h3 id="panel-Skills-title" class="text-2xl font-bold">Skills</h3>
+                        <button class="panel-close" aria-label="Close Skills">×</button>
+
+                        <div class="mt-4 space-y-3">
+                            <div>
+                                <div class="text-sm text-gray-300 font-medium mb-1">Languages</div>
+                                <div class="flex flex-wrap gap-2">
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">JavaScript</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">TypeScript</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Python</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Solidity</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-sm text-gray-300 font-medium mb-1">Frontend</div>
+                                <div class="flex flex-wrap gap-2">
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">HTML</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">CSS</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">JavaScript</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">React</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Next.js</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Tailwind CSS</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Accessibility
+                                        (a11y)</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-sm text-gray-300 font-medium mb-1">Backend & Databases</div>
+                                <div class="flex flex-wrap gap-2">
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Node.js</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Express</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Postgres</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">SQL</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">MySQL</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Python</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Django</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Django REST</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Redis</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-sm text-gray-300 font-medium mb-1">DevOps & Tooling</div>
+                                <div class="flex flex-wrap gap-2">
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Docker</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">GitHub
+                                        Actions</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">CI/CD</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Cloud
+                                        computing</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-sm text-gray-300 font-medium mb-1">Analytics & Search</div>
+                                <div class="flex flex-wrap gap-2">
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Google
+                                        Analytics</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Google Search
+                                        Console</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-sm text-gray-300 font-medium mb-1">Customer & Support Tools</div>
+                                <div class="flex flex-wrap gap-2">
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Customer Relationship
+                                        Management</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Live Chat
+                                        Tools</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Remote Support
+                                        Software</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-sm text-gray-300 font-medium mb-1">Graphics & UI Design</div>
+                                <div class="flex flex-wrap gap-2">
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Corel Draw</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Adobe
+                                        Photoshop</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Adobe
+                                        Illustrator</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Figma</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Canva</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-sm text-gray-300 font-medium mb-1">Blockchain & Web3</div>
+                                <div class="flex flex-wrap gap-2">
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Solidity</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Hardhat</button>
+                                    <button type="button"
+                                        class="px-3 py-1 bg-indigo-600 rounded text-sm text-white">Ethers.js</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="panel-Experience" class="panel rounded-lg bg-white/5 text-left" role="region"
+                        aria-labelledby="panel-Experience-title">
+                        <h3 id="panel-Experience-title" class="text-2xl font-bold">Experience</h3>
+                        <button class="panel-close" aria-label="Close Experience">×</button>
+
+                        <div class="mt-3 text-gray-200">
+                            <div class="font-semibold">Freelance Full Stack Web Developer</div>
+                            <div class="text-sm text-gray-400">Aug 2021 — Present (Remote / Contract)</div>
+                            <p class="mt-2 text-gray-200">Contract and freelance engagements across web and product
+                                work: full-stack apps, integrations, and small-team technical leadership.</p>
+                        </div>
+
+                        <div class="mt-4 text-gray-200">
+                            <div class="font-semibold">Rgistplusedu Consult — Educational Consulting</div>
+                            <div class="text-sm text-gray-400">Nov 2023 — 2025</div>
+                            <p class="mt-2 text-gray-200">Engaged as Web Administrator / IT Manager — led delivery
+                                and operations for applicant and learning portals, including deployment and
+                                monitoring.</p>
+                        </div>
+
+                        <div class="mt-4 text-gray-200">
+                            <div class="font-semibold">GiftTech‑Hub — E‑commerce Manager / Web Developer</div>
+                            <div class="text-sm text-gray-400">Sept 2022 — Oct 2023</div>
+                            <p class="mt-2 text-gray-200">Managed e‑commerce platform development, content and
+                                integrations for order flows and payments.</p>
+                        </div>
+
+                        <div class="mt-4 text-gray-200">
+                            <div class="font-semibold">Pack & Pop Enterprise — IT Officer / Production Manager</div>
+                            <div class="text-sm text-gray-400">Nov 2020 — Aug 2022</div>
+                            <p class="mt-2 text-gray-200">Operational IT role supporting production systems and
+                                site management.</p>
+                        </div>
+
+                        <div class="mt-4 text-gray-200">
+                            <div class="font-semibold">Rehoboth Computer Enterprise — Graphics Designer / Typist</div>
+                            <div class="text-sm text-gray-400">Dec 2011 — Jan 2015</div>
+                            <p class="mt-2 text-gray-200">Early-career role focused on design and administrative
+                                support.</p>
+                        </div>
+                    </article>
+                    <!-- panel-Contact removed to avoid duplicate contact; footer's #contact section remains -->
+                </div>
+            </div>
+
+            <aside id="toc-wrap" class="order-first md:order-last">
+                <div class="sticky top-28 bg-white/3 rounded-xl p-4">
+                    <h4 class="text-xs uppercase text-gray-300 tracking-wide mb-2">Contents</h4>
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="text-xs text-gray-400">Index</div>
+                        <div class="flex items-center gap-2">
+                            <button id="toc-play"
+                                class="text-xs px-3 py-1 bg-indigo-600 rounded text-white">Auto-play</button>
+                        </div>
+                    </div>
+                    <ul id="toc" class="space-y-2 text-sm">
+                        <li class="toc-item p-2 rounded-md bg-white/6 cursor-pointer" data-target="panel-Introduction"
+                            tabindex="0" role="button" aria-controls="panel-Introduction">
+                            <span class="inline-block w-6 mr-3 text-sm text-gray-400">1</span>Introduction
+                        </li>
+                        <li class="toc-item p-2 rounded-md bg-white/6 cursor-pointer" data-target="panel-Projects"
+                            tabindex="0" role="button" aria-controls="panel-Projects">
+                            <span class="inline-block w-6 mr-3 text-sm text-gray-400">2</span>Projects
+                        </li>
+                        <li class="toc-item p-2 rounded-md bg-white/6 cursor-pointer" data-target="panel-MyWork"
+                            tabindex="0" role="button" aria-controls="panel-MyWork">
+                            <span class="inline-block w-6 mr-3 text-sm text-gray-400">3</span>My Work
+                        </li>
+                        <li class="toc-item p-2 rounded-md bg-white/6 cursor-pointer" data-target="panel-Certifications"
+                            tabindex="0" role="button" aria-controls="panel-Certifications">
+                            <span class="inline-block w-6 mr-3 text-sm text-gray-400">4</span>Certifications
+                        </li>
+                        <li class="toc-item p-2 rounded-md bg-white/6 cursor-pointer" data-target="panel-Skills"
+                            tabindex="0" role="button" aria-controls="panel-Skills">
+                            <span class="inline-block w-6 mr-3 text-sm text-gray-400">5</span>Skills
+                        </li>
+                        <li class="toc-item p-2 rounded-md bg-white/6 cursor-pointer" data-target="panel-Experience"
+                            tabindex="0" role="button" aria-controls="panel-Experience">
+                            <span class="inline-block w-6 mr-3 text-sm text-gray-400">6</span>Experience
+                        </li>
+                        <li class="toc-item p-2 rounded-md bg-white/6 cursor-pointer" data-target="contact" tabindex="0"
+                            role="button" aria-controls="contact">
+                            <span class="inline-block w-6 mr-3 text-sm text-gray-400">7</span>Contact
+                        </li>
+                    </ul>
+
+                </div>
+            </aside>
+        </section>
+
+        <!-- Following sections removed (Portfolio / duplicate Experience) -->
+    </main>
+
+    <!-- Contact form restored -->
+    <section id="contact" class="mt-12">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white/5 p-6 sm:p-8 rounded-xl">
+                <h2 class="text-2xl font-bold text-white mb-2 text-center">Ready to Build? Let's Connect.</h2>
+                <p class="text-gray-300 mb-4 text-center">I am available for new projects and collaborations. Send a
+                    message or
+                    reach out directly.</p>
+                <form id="contact-form" class="space-y-4">
+                    <div>
+                        <label for="cf-name" class="sr-only">Your name</label>
+                        <input type="text" id="cf-name" name="name" placeholder="Your name" required
+                            class="w-full p-3 rounded-lg bg-black/40 border border-white/10 text-white placeholder:text-gray-400">
+                    </div>
+                    <div>
+                        <label for="cf-email" class="sr-only">Your email</label>
+                        <input type="email" id="cf-email" name="email" placeholder="Your email" required
+                            class="w-full p-3 rounded-lg bg-black/40 border border-white/10 text-white placeholder:text-gray-400">
+                    </div>
+                    <div>
+                        <label for="cf-message" class="sr-only">Your message</label>
+                        <textarea id="cf-message" name="message" rows="4" placeholder="Your message" required
+                            class="w-full p-3 rounded-lg bg-black/40 border border-white/10 text-white placeholder:text-gray-400"></textarea>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded">Send</button>
+                        <svg id="loading-spinner" class="ml-3 hidden" width="20" height="20" viewBox="0 0 50 50"
+                            aria-hidden="true">
+                            <circle cx="25" cy="25" r="20" fill="none" stroke="#fff" stroke-width="4"
+                                stroke-linecap="round" stroke-dasharray="31.4 31.4" transform="rotate(-90 25 25)">
+                            </circle>
+                        </svg>
+                        <span id="cf-status" class="ml-3 text-sm text-white hidden" aria-live="polite"></span>
+                    </div>
+                </form>
+                <!-- Custom message box used for confirmations / errors -->
+                <div id="message-box" class="hidden fixed inset-0 z-60 flex items-center justify-center p-4">
+                    <div class="max-w-lg w-full bg-white/6 backdrop-blur-md rounded-lg p-6 text-left">
+                        <div class="flex items-start justify-between">
+                            <h4 id="message-box-title" class="text-lg font-bold text-white">Notice</h4>
+                            <button id="message-box-close"
+                                class="text-white text-2xl leading-none ml-4">&times;</button>
+                        </div>
+                        <p id="message-box-text" class="mt-3 text-gray-200">Message</p>
+                        <div class="mt-4 text-right">
+                            <button id="message-box-ok" class="px-4 py-2 bg-indigo-600 text-white rounded">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 border-t border-white/6 pt-4 text-center">
+                    <h3 class="text-sm font-semibold text-white mb-2">Contact</h3>
+                    <div class="text-sm text-gray-300 space-y-2">
+                        <div>Email: <a href="mailto:info@menegbengamicheal.com"
+                                class="text-indigo-300">info@menegbengamicheal.com</a></div>
+                        <div>Email: <a href="mailto:menegbengamicheal@gmail.com"
+                                class="text-indigo-300">menegbengamicheal@gmail.com</a></div>
+                        <div>Phone: <a href="tel:+2349032990951" class="text-indigo-300">+234 903 299 0951</a></div>
+                        <div>Location: Lagos, Nigeria</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-12 py-8 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+            <div class="text-sm text-gray-300">© 2025 Mene Gbenga Micheal</div>
+            <div class="text-sm"><a href="resume.pdf" class="text-indigo-300">CV</a></div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp chat button (labeled) -->
+    <a id="wa-chat"
+        href="https://wa.me/2347045716827?text=Hi%20Mene%20%E2%80%94%20I%27d%20like%20to%20discuss%20a%20project."
+        target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat on WhatsApp"
+        aria-describedby="wa-desc"
+        class="fixed right-4 bottom-4 md:right-6 md:bottom-6 z-50 inline-flex items-center gap-2 px-4 py-3 rounded-full bg-green-500 hover:bg-green-600 shadow-lg text-white wa-pulse"
+        style="box-shadow:0 8px 20px rgba(2,6,23,0.2);">
+        <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+            class="text-white" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.672.149-.198.297-.767.967-.94 1.165-.174.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198 0-.372-.05-.522-.05-.149-.672-1.612-.922-2.205-.242-.579-.487-.5-.672-.51l-.573-.01c-.198 0-.522.074-.797.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.078c.149.198 2.095 3.2 5.076 4.487 0 0 .04.02.06.029.273.125.547.179.797.115.258-.064 1.758-.719 2.005-1.415.248-.695.248-1.29.174-1.414-.074-.124-.272-.198-.57-.347zM12 2C6.486 2 2 6.486 2 12c0 2.11.64 4.065 1.741 5.705L2 22l4.425-1.163C8.951 21.02 10.419 21.5 12 21.5 17.514 21.5 22 17.014 22 11.5S17.514 2 12 2z" />
+        </svg>
+        <span class="text-white font-medium">Chat on WhatsApp</span>
+        <span class="wa-badge" aria-hidden="true"></span>
+    </a>
+    <span id="wa-desc" class="sr-only">Opens WhatsApp with a prefilled message</span>
+
+    <!-- Hand SVG (hidden — replaced with scroll/click reveal) -->
+    <svg id="picker-hand" viewBox="0 0 64 64" width="96" height="96" class="fixed z-50 pointer-events-none"
+        style="left:20px;top:160px;opacity:0.98;display:none;">
+        <g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 40c0-8 0-16 8-16s8 8 8 16" />
+            <path d="M36 40l6-6" />
+            <path d="M12 44c4 4 12 6 20 6s16-2 20-6" />
+            <circle cx="18" cy="26" r="2" fill="#fff" />
+        </g>
+    </svg>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
