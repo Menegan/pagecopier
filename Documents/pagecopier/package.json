@@ -1,0 +1,19 @@
+{
+    "name": "pagecopier",
+    "version": "1.0.0",
+    "description": "A single-page website cloner that copies only the visual UI/appearance",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js"
+    },
+    "keywords": ["website", "cloner", "ui", "copier"],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.2",
+        "cheerio": "^1.0.0-rc.12",
+        "cors": "^2.8.5",
+        "playwright": "^1.40.0"
+    }
+}
